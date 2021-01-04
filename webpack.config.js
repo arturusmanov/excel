@@ -12,11 +12,9 @@ const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`;
 const jsLoader = () => {
   const loaders = [
     {
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env'],
-        },
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env'],
       },
     },
   ];
@@ -76,7 +74,6 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-
           MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
