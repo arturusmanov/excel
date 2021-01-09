@@ -6,9 +6,12 @@
     "node": true
   },
   "rules": {
-    "object-curly-spacing": ["error", "always"],
+    "object-curly-spacing": ["warn", "always"],
     "arrow-parens": "off",
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "max-len": ["warn", { "code":  150 }],
+    "comma-dangle": "off",
+    "no-unused-vars": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
